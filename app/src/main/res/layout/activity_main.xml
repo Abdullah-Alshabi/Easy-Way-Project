@@ -9,18 +9,35 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="113dp"
         android:layout_height="39dp"
         android:layout_marginTop="16dp"
         android:text="Easy Way"
         android:textColor="@color/white"
-        android:textSize="11pt"
+        android:textSize="12pt"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="318dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:text="YOUR CALORIES, SIMPLIFIED"
+        android:textColor="@color/white"
+        android:textSize="11pt"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.125" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -39,10 +56,29 @@
         android:layout_width="257dp"
         android:layout_height="91dp"
         android:layout_marginBottom="297dp"
+        android:backgroundTint="@color/dark"
         android:text="Log in"
+        android:textStyle="italic"
+        android:textSize="12pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/Signin"
+        android:layout_width="257dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="362dp"
+        android:layout_marginBottom="176dp"
+        android:backgroundTint="@color/dark"
+        android:text="Sign in"
+        android:textStyle="italic"
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
