@@ -26,6 +26,7 @@ public class Log_in extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         TextView signUpText = findViewById(R.id.textView4);
         signUpText.setOnClickListener(new View.OnClickListener() {
             @Override

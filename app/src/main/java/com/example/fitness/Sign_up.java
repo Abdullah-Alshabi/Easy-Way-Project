@@ -1,6 +1,10 @@
 package com.example.fitness;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +24,18 @@ public class Sign_up extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        TextView signUpText = findViewById(R.id.textView2);
+        signUpText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the sign-up activity
+                Intent intent = new Intent(Sign_up.this, Log_in.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView backArrow = (ImageView)findViewById(R.id.back_arrow);
+        backArrow.setOnClickListener(v -> onBackPressed());
     }
-}
+
+    }

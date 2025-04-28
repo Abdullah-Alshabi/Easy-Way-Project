@@ -5,6 +5,188 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/signup"
+
     tools:context=".Sign_up">
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="167dp"
+        android:layout_marginBottom="36dp"
+        android:text="Registration"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="20pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/SignUpName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Ali Mohammed"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/SignUpEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="moh@gmail.com"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/SignUpPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/SignUpConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="20pt"
+        android:layout_height="0dp"
+        android:layout_marginBottom="190dp"
+        android:clickable="true"
+        android:contentDescription="رجوع"
+        android:focusable="true"
+        android:src="@drawable/arrow_ba"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/white"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginBottom="45dp"
+        android:ems="5"
+        android:text="Register"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="7dp"
+        android:text="Email"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/SignUpEmail"
+        app:layout_constraintStart_toStartOf="@+id/SignUpEmail"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="483dp"
+        android:text="Name"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/SignUpName"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="password"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/SignUpPassword"
+        app:layout_constraintStart_toStartOf="@+id/SignUpPassword"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpEmail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="10dp"
+        android:text="Confirm password"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/SignUpConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/SignUpConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpPassword"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

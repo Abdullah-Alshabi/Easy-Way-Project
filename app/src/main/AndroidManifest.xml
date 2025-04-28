@@ -12,24 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitness"
         tools:targetApi="31">
+
+        <!-- تأكد من أن الأنشطة مسجلة بشكل صحيح -->
         <activity
             android:name=".Profile"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Sign_up"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Calculate"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Log_in"
-            android:exported="false" />
+            android:exported="true" />
+
+        <!-- MainActivity يجب أن تكون هي الأنشطة الرئيسية (التي تظهر أولًا) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
