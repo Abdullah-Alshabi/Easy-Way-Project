@@ -1,4 +1,5 @@
 package com.example.fitness;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Calculate extends AppCompatActivity {
     private EditText weightInput, heightInput;
     private TextView txtResult;
-    private Button calculateButton;
+    private Button calculateButton , profileButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class Calculate extends AppCompatActivity {
 
 
         weightInput = findViewById(R.id.weightInput);
+        profileButton = findViewById(R.id.profile);
         heightInput = findViewById(R.id.heightInput);
         calculateButton = findViewById(R.id.calculateButton);
         txtResult = findViewById(R.id.txtResult);
@@ -42,6 +44,13 @@ public class Calculate extends AppCompatActivity {
                 } else {
                     txtResult.setText("Please enter both weight and height.");
                 }
+            }
+        });
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Calculate.this, Profile.class);
+                startActivity(intent);
             }
         });
 
